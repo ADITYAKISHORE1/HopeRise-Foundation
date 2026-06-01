@@ -1,0 +1,123 @@
+================================================================================
+HopeRise Foundation NGO Website - Complete Project Details
+================================================================================
+
+This document provides a comprehensive overview of the HopeRise Foundation NGO website project.
+
+--------------------------------------------------------------------------------
+1. PROJECT OVERVIEW
+--------------------------------------------------------------------------------
+Project Name: HopeRise Foundation
+Type: Multi-page dynamic web application (NGO / Charity domain)
+Goal: To create a beautiful, feature-rich website that highlights the organization's programs, impact, and provides avenues for user engagement (donations, volunteering, contact).
+
+--------------------------------------------------------------------------------
+2. URLS
+--------------------------------------------------------------------------------
+[Important: Replace these placeholders with your actual URLs once created]
+GitHub Repository: https://github.com/YourUsername/hoperise-ngo-website
+Live Website URL:  https://hoperise-ngo-website.vercel.app
+
+--------------------------------------------------------------------------------
+3. TECHNOLOGY STACK
+--------------------------------------------------------------------------------
+- Frontend Structure: HTML5
+- Frontend Styling: Vanilla CSS3 (Global design tokens, component classes, CSS Grid/Flexbox)
+- Frontend Logic: Vanilla JavaScript (Intersection Observers, Lightbox, Form Handling, DOM Manipulation)
+- Backend Server: Node.js with Express.js (v5)
+- Hosting / Deployment: Vercel (Serverless Functions + Static Hosting)
+
+--------------------------------------------------------------------------------
+4. FRONTEND FEATURES (10 Pages)
+--------------------------------------------------------------------------------
+The frontend is composed of 10 fully responsive pages:
+
+1. Homepage (index.html)
+   - Animated hero section with floating particles.
+   - Live number counters for impact statistics that animate on scroll.
+   - Featured programs preview and testimonials.
+   - Call-to-action banners for donations and volunteering.
+
+2. About Us (about.html)
+   - Organizational story and mission/vision/values breakdown.
+   - Interactive vertical timeline showing historical milestones.
+   - Team profiles and trusted partner logos.
+
+3. Programs (programs.html)
+   - Details the 4-step approach to community change.
+   - Filterable tab system (All, Education, Water, Healthcare, Empowerment, Environment) that dynamically sorts program cards.
+
+4. Impact (impact.html)
+   - Deep dive into transparency and statistics.
+   - CSS-generated Pie chart showing financial allocation.
+   - Animated progress bars for funding distribution.
+   - An interactive, SVG-based world map with hover tooltips showing project locations.
+
+5. Blog (blog.html)
+   - Displays a grid of blog posts fetched dynamically from the Express API.
+   - Includes a client-side search bar and category filtering tabs.
+
+6. Blog Post (blog-post.html)
+   - A template for reading individual articles.
+   - Fetches specific post content from the backend based on URL parameters.
+   - Features social sharing buttons and a related articles sidebar.
+
+7. Gallery (gallery.html)
+   - A masonry-style photo grid featuring images of ongoing projects.
+   - Includes a custom-built JavaScript lightbox overlay for viewing images in full screen with keyboard and button navigation.
+
+8. Donate (donate.html)
+   - A complex donation UI allowing users to select "One-Time" or "Monthly".
+   - Pre-defined amount buttons ($10, $25, $50, etc.) and a custom amount input.
+   - Dynamic "Impact Calculator" that updates text based on the selected amount (e.g., "$50 = 2 months of clean water").
+   - Demo secure checkout form.
+
+9. Volunteer (volunteer.html)
+   - Lists various volunteering opportunities (Teaching, Medical, Tech, etc.).
+   - Features an interactive, 3-step signup form (Personal Info -> Skills -> Motivation) with a progress bar and smooth transitions.
+
+10. Contact (contact.html)
+    - Provides address, email, phone, and social media details.
+    - Includes a functioning contact form that POSTs to the backend.
+    - Features an FAQ accordion component.
+
+--------------------------------------------------------------------------------
+5. BACKEND FEATURES (Express.js API)
+--------------------------------------------------------------------------------
+The backend (located in api/index.js) acts as both an API provider and a serverless function for Vercel. It includes:
+
+- In-Memory Data Store: Temporarily stores form submissions for Contacts, Volunteers, Newsletters, and Donations.
+- Static File Serving: Serves the HTML, CSS, JS, and Images from the 'public' folder.
+- Fallback Routing: Ensures users hitting unknown routes are redirected to the homepage (SPA fallback).
+
+API Endpoints:
+- GET /api/blogs: Returns a JSON array of all blog posts (used by blog.html).
+- GET /api/blogs/:id: Returns a specific blog post by ID (used by blog-post.html).
+- POST /api/contact: Receives and logs contact form submissions.
+- POST /api/volunteer: Receives and logs volunteer applications.
+- POST /api/newsletter: Receives and logs newsletter email signups.
+- POST /api/donate: Receives and logs donation pledges.
+- GET /api/stats: Aggregates system data (total donors, total volunteers, etc.).
+
+--------------------------------------------------------------------------------
+6. DESIGN SYSTEM
+--------------------------------------------------------------------------------
+The project utilizes a strict CSS variables design system (global.css):
+- Primary Colors: Teal / Sea Green (#1e9e8b, #115e59)
+- Accent Colors: Gold / Amber (#f59e0b, #d97706)
+- Typography: Inter (sans-serif) for body text, Playfair Display (serif) for headings.
+- Shadows & Radii: Consistent border-radius (md, lg, xl) and soft drop shadows for a "glassmorphism" premium feel.
+- Animations: Extensive use of CSS animations (fadeInUp, floating particles, pulse dots) and JS Intersection Observers to trigger "reveal" classes when elements scroll into view.
+
+--------------------------------------------------------------------------------
+7. DEPLOYMENT (Vercel)
+--------------------------------------------------------------------------------
+The project root contains a `vercel.json` file. This file tells Vercel how to handle traffic:
+1. Any request going to /api/* is routed to the Express.js server (api/index.js).
+2. Any other request is routed to the static /public folder.
+
+This architecture allows the project to be hosted completely for free on Vercel's Hobby tier, combining static CDN speed with serverless backend capabilities.
+
+--------------------------------------------------------------------------------
+END OF DOCUMENT
+================================================================================
