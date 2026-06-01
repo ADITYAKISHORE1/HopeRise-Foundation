@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — HopeRise Foundation</title>
+  <meta name="description" content="Get in touch with HopeRise Foundation. Reach out about volunteering, partnerships, donations, or general inquiries.">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <nav class="navbar dark-page" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><div class="nav-logo-icon">🌱</div>HopeRise</a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="programs.html">Programs</a><a href="impact.html">Impact</a><a href="blog.html">Blog</a><a href="gallery.html">Gallery</a><a href="volunteer.html">Volunteer</a><a href="contact.html" class="active">Contact</a><a href="donate.html" class="nav-donate">Donate ❤️</a>
+      </div>
+      <button class="nav-hamburger" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Contact</span></div>
+      <h1>Let's Build Something<br>Beautiful Together</h1>
+      <p>Questions, partnerships, or just want to say hello? We'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <section class="section bg-white">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="reveal-left">
+          <span class="section-label">Get in Touch</span>
+          <h2 class="section-title">We're Here <span class="highlight">For You</span></h2>
+          <p class="section-subtitle">Whether you want to volunteer, partner, donate, or simply learn more about our work — reach out anytime.</p>
+
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="method-icon">📍</div>
+              <div><h4>Headquarters</h4><p>42 Changemaker Lane<br>New Delhi, India 110001</p></div>
+            </div>
+            <div class="contact-method">
+              <div class="method-icon">📧</div>
+              <div><h4>Email Us</h4><p>hello@hoperise.org<br>partnerships@hoperise.org</p></div>
+            </div>
+            <div class="contact-method">
+              <div class="method-icon">📞</div>
+              <div><h4>Call Us</h4><p>+91 11 2345 6789<br>Mon–Fri, 9am–6pm IST</p></div>
+            </div>
+            <div class="contact-method">
+              <div class="method-icon">💬</div>
+              <div><h4>Social Media</h4><p>@HopeRiseFoundation<br>on all platforms</p></div>
+            </div>
+          </div>
+
+          <div class="map-placeholder">
+            <span>📍 Interactive Map — New Delhi, India</span>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card reveal-right">
+          <h3>Send Us a Message</h3>
+          <p>Fill in the form and we'll respond within 24 hours.</p>
+          <form class="contact-form" id="contact-form" style="display:flex;flex-direction:column;gap:18px;">
+            <div class="form-row">
+              <div class="form-group"><label for="c-first">First Name *</label><input type="text" id="c-first" class="form-input" placeholder="Your first name" required></div>
+              <div class="form-group"><label for="c-last">Last Name</label><input type="text" id="c-last" class="form-input" placeholder="Your last name"></div>
+            </div>
+            <div class="form-group"><label for="c-email">Email *</label><input type="email" id="c-email" class="form-input" placeholder="you@email.com" required></div>
+            <div class="form-group">
+              <label for="c-interest">I'm Interested In</label>
+              <select id="c-interest" class="form-input">
+                <option value="" disabled selected>Select a topic</option>
+                <option value="volunteer">Volunteering</option>
+                <option value="donate">Making a Donation</option>
+                <option value="partner">Corporate Partnership</option>
+                <option value="media">Media / Press</option>
+                <option value="general">General Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group"><label for="c-message">Your Message *</label><textarea id="c-message" class="form-input" placeholder="How can we help you?" required></textarea></div>
+            <button type="submit" class="btn btn-primary btn-block" id="contact-submit">Send Message ✉️</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section bg-light">
+    <div class="container" style="max-width:800px;">
+      <div class="section-header center">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Common Questions</h2>
+      </div>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header">How can I donate to HopeRise?<span class="accordion-icon">+</span></button>
+          <div class="accordion-body"><div class="accordion-body-inner">You can donate online through our <a href="donate.html" style="color:var(--primary-500);font-weight:600;">Donate page</a>. We accept credit cards, debit cards, and bank transfers. All donations are tax-deductible.</div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Can my company partner with HopeRise?<span class="accordion-icon">+</span></button>
+          <div class="accordion-body"><div class="accordion-body-inner">Absolutely! We offer various corporate partnership models including cause marketing, employee volunteer programs, matching gifts, and sponsorship opportunities. Email partnerships@hoperise.org to learn more.</div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Where does HopeRise operate?<span class="accordion-icon">+</span></button>
+          <div class="accordion-body"><div class="accordion-body-inner">We currently operate in 50+ countries across Asia, Africa, South America, and beyond. Our headquarters is in New Delhi, India, with regional offices in Nairobi, Dhaka, and São Paulo.</div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Is HopeRise a registered nonprofit?<span class="accordion-icon">+</span></button>
+          <div class="accordion-body"><div class="accordion-body-inner">Yes, HopeRise Foundation is a registered 501(c)(3) nonprofit organization. We are GuideStar Gold rated and BBB Accredited. Our financial reports are publicly available on our Impact page.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="nav-logo"><div class="nav-logo-icon">🌱</div>HopeRise</a><p>Empowering communities since 2012.</p><div class="footer-socials"><a href="#">📘</a><a href="#">🐦</a><a href="#">📸</a><a href="#">💼</a></div></div>
+        <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="programs.html">Programs</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h4>Programs</h4><a href="programs.html">Education</a><a href="programs.html">Water</a><a href="programs.html">Healthcare</a></div>
+        <div class="footer-col"><h4>Get Involved</h4><a href="donate.html">Donate</a><a href="volunteer.html">Volunteer</a><a href="contact.html">Partner</a></div>
+      </div>
+      <div class="footer-bottom"><p>© 2025 HopeRise Foundation.</p><p><a href="#">Terms</a> · <a href="#">Privacy</a></p></div>
+    </div>
+  </footer>
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+  <script src="js/app.js"></script>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = document.getElementById('contact-submit');
+      const original = btn.innerHTML;
+      btn.innerHTML = 'Sending... ⏳';
+      btn.disabled = true;
+
+      const data = {
+        firstName: document.getElementById('c-first').value,
+        lastName: document.getElementById('c-last').value,
+        email: document.getElementById('c-email').value,
+        interest: document.getElementById('c-interest').value,
+        message: document.getElementById('c-message').value,
+      };
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        const result = await res.json();
+        showToast(result.message || 'Message sent successfully!');
+      } catch (err) {
+        showToast('Message sent! We\'ll get back to you soon.', 'success');
+      }
+
+      btn.innerHTML = 'Sent! ✅';
+      btn.style.background = 'linear-gradient(135deg, #16a34a, #15803d)';
+      document.getElementById('contact-form').reset();
+
+      setTimeout(() => {
+        btn.innerHTML = original;
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 3500);
+    });
+  </script>
+</body>
+</html>

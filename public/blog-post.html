@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post — HopeRise Foundation</title>
+  <meta name="description" content="Read in-depth stories and insights from HopeRise Foundation's work around the world.">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <nav class="navbar dark-page" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><div class="nav-logo-icon">🌱</div>HopeRise</a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="programs.html">Programs</a><a href="impact.html">Impact</a><a href="blog.html" class="active">Blog</a><a href="gallery.html">Gallery</a><a href="volunteer.html">Volunteer</a><a href="contact.html">Contact</a><a href="donate.html" class="nav-donate">Donate ❤️</a>
+      </div>
+      <button class="nav-hamburger" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="page-hero" style="padding-bottom:50px;">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><a href="blog.html">Blog</a><span class="sep">/</span><span>Article</span></div>
+      <h1 id="post-title" style="max-width:700px;">Loading article...</h1>
+    </div>
+  </section>
+
+  <section class="section bg-white" style="padding-top:40px;" id="post-content">
+    <div class="container">
+      <div class="blog-post-layout">
+        <div class="post-content">
+          <div class="post-featured-image">
+            <img id="post-image" src="images/education.png" alt="Blog post">
+          </div>
+          <div class="post-meta">
+            <span class="author" style="display:flex;align-items:center;gap:8px;">
+              <div class="avatar" style="width:32px;height:32px;font-size:.7rem;">✍️</div>
+              <span id="post-author-name">Loading...</span>
+            </span>
+            <span id="post-date">—</span>
+            <span>·</span>
+            <span id="post-read-time">—</span>
+            <span style="background:var(--primary-50);color:var(--primary-600);padding:3px 10px;border-radius:var(--radius-full);font-size:.78rem;font-weight:600;" id="post-category">—</span>
+          </div>
+          <div class="post-body" id="post-body">
+            <p>Loading content...</p>
+          </div>
+          <div class="share-buttons">
+            <span style="font-weight:600;font-size:.88rem;margin-right:8px;">Share:</span>
+            <button class="share-btn" onclick="navigator.clipboard.writeText(window.location.href);showToast('Link copied!');">🔗 Copy Link</button>
+            <button class="share-btn" onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(window.location.href),'_blank')">🐦 Twitter</button>
+            <button class="share-btn" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(window.location.href),'_blank')">💼 LinkedIn</button>
+          </div>
+        </div>
+
+        <aside class="post-sidebar">
+          <div class="sidebar-card">
+            <h4>Related Articles</h4>
+            <a href="blog-post.html?id=1" class="related-post">
+              <div class="thumb"><img src="images/education.png" alt="Education"></div>
+              <div><h5>How Education Transforms Communities</h5><p>May 28, 2025</p></div>
+            </a>
+            <a href="blog-post.html?id=2" class="related-post">
+              <div class="thumb"><img src="images/water.png" alt="Water"></div>
+              <div><h5>Clean Water Changes Everything</h5><p>May 15, 2025</p></div>
+            </a>
+            <a href="blog-post.html?id=3" class="related-post">
+              <div class="thumb"><img src="images/healthcare.png" alt="Healthcare"></div>
+              <div><h5>Mobile Healthcare: Doctors to Doorsteps</h5><p>May 3, 2025</p></div>
+            </a>
+          </div>
+          <div class="sidebar-card" style="background:var(--primary-50);border-color:var(--primary-200);">
+            <h4>Support This Work</h4>
+            <p style="font-size:.85rem;color:var(--neutral-600);margin-bottom:16px;">Your donation directly funds programs like the one in this article.</p>
+            <a href="donate.html" class="btn btn-primary btn-sm btn-block">Donate Now ❤️</a>
+          </div>
+          <div class="sidebar-card">
+            <h4>Categories</h4>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;">
+              <a href="blog.html" class="tab-btn" style="font-size:.78rem;padding:6px 14px;">Education</a>
+              <a href="blog.html" class="tab-btn" style="font-size:.78rem;padding:6px 14px;">Water</a>
+              <a href="blog.html" class="tab-btn" style="font-size:.78rem;padding:6px 14px;">Healthcare</a>
+              <a href="blog.html" class="tab-btn" style="font-size:.78rem;padding:6px 14px;">Empowerment</a>
+              <a href="blog.html" class="tab-btn" style="font-size:.78rem;padding:6px 14px;">Relief</a>
+              <a href="blog.html" class="tab-btn" style="font-size:.78rem;padding:6px 14px;">Environment</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="nav-logo"><div class="nav-logo-icon">🌱</div>HopeRise</a><p>Empowering communities since 2012.</p><div class="footer-socials"><a href="#">📘</a><a href="#">🐦</a><a href="#">📸</a><a href="#">💼</a></div></div>
+        <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="programs.html">Programs</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h4>Programs</h4><a href="programs.html">Education</a><a href="programs.html">Water</a><a href="programs.html">Healthcare</a></div>
+        <div class="footer-col"><h4>Get Involved</h4><a href="donate.html">Donate</a><a href="volunteer.html">Volunteer</a><a href="contact.html">Partner</a></div>
+      </div>
+      <div class="footer-bottom"><p>© 2025 HopeRise Foundation.</p><p><a href="#">Terms</a> · <a href="#">Privacy</a></p></div>
+    </div>
+  </footer>
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+  <script src="js/app.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>

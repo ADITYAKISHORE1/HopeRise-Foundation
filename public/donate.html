@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate — HopeRise Foundation</title>
+  <meta name="description" content="Make a donation to HopeRise Foundation. 92% of every dollar goes directly to education, healthcare, and clean water programs.">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <nav class="navbar dark-page" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><div class="nav-logo-icon">🌱</div>HopeRise</a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="programs.html">Programs</a><a href="impact.html">Impact</a><a href="blog.html">Blog</a><a href="gallery.html">Gallery</a><a href="volunteer.html">Volunteer</a><a href="contact.html">Contact</a><a href="donate.html" class="nav-donate active">Donate ❤️</a>
+      </div>
+      <button class="nav-hamburger" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Donate</span></div>
+      <h1>Your Generosity<br>Changes Lives</h1>
+      <p>Every dollar makes a difference. 92% goes directly to programs that transform communities worldwide.</p>
+    </div>
+  </section>
+
+  <section class="section bg-white">
+    <div class="container">
+      <div class="donate-grid">
+        <!-- Donation Form -->
+        <div class="donate-form-card reveal-left">
+          <h2 style="font-family:var(--font-serif);font-size:1.5rem;margin-bottom:6px;">Make a Donation</h2>
+          <p style="color:var(--neutral-500);font-size:.9rem;margin-bottom:24px;">Choose an amount and complete your secure donation.</p>
+
+          <form id="donate-form">
+            <!-- Frequency -->
+            <div class="amount-toggle">
+              <button type="button" class="active" data-freq="one-time">One-Time</button>
+              <button type="button" data-freq="monthly">Monthly</button>
+            </div>
+
+            <!-- Amount Options -->
+            <div class="amount-grid">
+              <div class="amount-option" data-amount="10">
+                $10
+                <div class="impact-text">School supplies for 1 child</div>
+              </div>
+              <div class="amount-option" data-amount="25">
+                $25
+                <div class="impact-text">1 month clean water for a family</div>
+              </div>
+              <div class="amount-option selected" data-amount="50">
+                $50
+                <div class="impact-text">Medical checkup for a village</div>
+              </div>
+              <div class="amount-option" data-amount="100">
+                $100
+                <div class="impact-text">Teacher training for 1 month</div>
+              </div>
+              <div class="amount-option" data-amount="250">
+                $250
+                <div class="impact-text">Fund a well drilling day</div>
+              </div>
+              <div class="amount-option" data-amount="500">
+                $500
+                <div class="impact-text">Full scholarship for 1 year</div>
+              </div>
+            </div>
+
+            <!-- Custom Amount -->
+            <div class="custom-amount" style="position:relative;margin-bottom:24px;">
+              <span class="currency-symbol">$</span>
+              <input type="number" id="custom-amount" class="form-input" placeholder="Custom amount" style="padding-left:36px;">
+            </div>
+
+            <!-- Personal Info -->
+            <div class="form-row" style="margin-bottom:16px;">
+              <div class="form-group">
+                <label for="donor-name">Full Name</label>
+                <input type="text" id="donor-name" class="form-input" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="donor-email">Email</label>
+                <input type="email" id="donor-email" class="form-input" placeholder="you@email.com" required>
+              </div>
+            </div>
+
+            <!-- Payment (Demo) -->
+            <div class="form-group" style="margin-bottom:16px;">
+              <label>Card Number (Demo)</label>
+              <input type="text" class="form-input" placeholder="4242 4242 4242 4242" maxlength="19">
+            </div>
+            <div class="form-row" style="margin-bottom:24px;">
+              <div class="form-group">
+                <label>Expiry</label>
+                <input type="text" class="form-input" placeholder="MM/YY" maxlength="5">
+              </div>
+              <div class="form-group">
+                <label>CVC</label>
+                <input type="text" class="form-input" placeholder="123" maxlength="3">
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-accent btn-lg btn-block">Complete Donation ❤️</button>
+            <p style="text-align:center;font-size:.78rem;color:var(--neutral-500);margin-top:12px;">🔒 Secured with 256-bit SSL encryption</p>
+          </form>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="donate-sidebar reveal-right">
+          <!-- Impact Calculator -->
+          <div class="impact-calculator">
+            <h3>💡 Your Impact</h3>
+            <div class="impact-list">
+              <div class="impact-item">
+                <span class="emoji">📚</span>
+                <span class="impact-text">$50 = 5 child's school supplies for a month</span>
+              </div>
+              <div class="impact-item">
+                <span class="emoji">💧</span>
+                <span class="impact-text">$50 = 2 months of clean water for a family</span>
+              </div>
+              <div class="impact-item">
+                <span class="emoji">🏥</span>
+                <span class="impact-text">$50 = 1 medical checkup for a village</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="trust-badges">
+            <h4>🛡️ Your Donation is Safe</h4>
+            <div class="badge-list">
+              <div class="badge-item"><div class="check">✓</div><span>256-bit SSL Encryption</span></div>
+              <div class="badge-item"><div class="check">✓</div><span>PCI-DSS Compliant</span></div>
+              <div class="badge-item"><div class="check">✓</div><span>92% Goes to Programs</span></div>
+              <div class="badge-item"><div class="check">✓</div><span>Tax-Deductible Receipt</span></div>
+              <div class="badge-item"><div class="check">✓</div><span>GuideStar Gold Rated</span></div>
+              <div class="badge-item"><div class="check">✓</div><span>BBB Accredited Charity</span></div>
+            </div>
+          </div>
+
+          <!-- Testimonial -->
+          <div class="testimonial-card" style="background:var(--neutral-50);">
+            <div class="stars">★★★★★</div>
+            <blockquote style="font-size:.85rem;">"Knowing exactly where my money goes makes me confident to give every month. HopeRise's transparency is unmatched."</blockquote>
+            <div class="testimonial-author"><div class="avatar">RK</div><div><h4>Rachel Kim</h4><p>Monthly Donor</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="nav-logo"><div class="nav-logo-icon">🌱</div>HopeRise</a><p>Empowering communities since 2012.</p><div class="footer-socials"><a href="#">📘</a><a href="#">🐦</a><a href="#">📸</a><a href="#">💼</a></div></div>
+        <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="programs.html">Programs</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h4>Programs</h4><a href="programs.html">Education</a><a href="programs.html">Water</a><a href="programs.html">Healthcare</a></div>
+        <div class="footer-col"><h4>Get Involved</h4><a href="donate.html">Donate</a><a href="volunteer.html">Volunteer</a><a href="contact.html">Partner</a></div>
+      </div>
+      <div class="footer-bottom"><p>© 2025 HopeRise Foundation.</p><p><a href="#">Terms</a> · <a href="#">Privacy</a></p></div>
+    </div>
+  </footer>
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+  <script src="js/app.js"></script>
+  <script src="js/donate.js"></script>
+</body>
+</html>

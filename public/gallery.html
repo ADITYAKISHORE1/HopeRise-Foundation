@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — HopeRise Foundation</title>
+  <meta name="description" content="Browse photos from HopeRise Foundation's education, healthcare, clean water, and community programs worldwide.">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <nav class="navbar dark-page" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><div class="nav-logo-icon">🌱</div>HopeRise</a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="programs.html">Programs</a><a href="impact.html">Impact</a><a href="blog.html">Blog</a><a href="gallery.html" class="active">Gallery</a><a href="volunteer.html">Volunteer</a><a href="contact.html">Contact</a><a href="donate.html" class="nav-donate">Donate ❤️</a>
+      </div>
+      <button class="nav-hamburger" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Gallery</span></div>
+      <h1>Moments of<br>Hope & Joy</h1>
+      <p>A visual journey through the communities we serve and the lives we've touched together.</p>
+    </div>
+  </section>
+
+  <section class="section bg-white tab-section">
+    <div class="container">
+      <div class="tab-nav" style="justify-content:center;margin-bottom:40px;">
+        <button class="tab-btn active" data-tab="all">All Photos</button>
+        <button class="tab-btn" data-tab="education">Education</button>
+        <button class="tab-btn" data-tab="water">Water</button>
+        <button class="tab-btn" data-tab="healthcare">Healthcare</button>
+        <button class="tab-btn" data-tab="community">Community</button>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="education">
+          <img src="images/education.png" alt="Children learning in classroom" loading="lazy">
+          <div class="overlay"><span>📚 Bright Minds classroom, India</span></div>
+        </div>
+        <div class="gallery-item" data-category="water">
+          <img src="images/water.png" alt="Clean water project" loading="lazy">
+          <div class="overlay"><span>💧 Pure Springs well, Kenya</span></div>
+        </div>
+        <div class="gallery-item" data-category="community">
+          <img src="images/about.png" alt="Volunteer team" loading="lazy">
+          <div class="overlay"><span>🤝 Volunteer team building</span></div>
+        </div>
+        <div class="gallery-item" data-category="healthcare">
+          <img src="images/healthcare.png" alt="Mobile clinic" loading="lazy">
+          <div class="overlay"><span>🏥 Healing Hands mobile clinic</span></div>
+        </div>
+        <div class="gallery-item" data-category="community">
+          <img src="images/gallery-women.png" alt="Women empowerment" loading="lazy">
+          <div class="overlay"><span>💪 Women Rising workshop</span></div>
+        </div>
+        <div class="gallery-item" data-category="community">
+          <img src="images/hero.png" alt="Community garden" loading="lazy">
+          <div class="overlay"><span>🌿 Community garden project</span></div>
+        </div>
+        <div class="gallery-item" data-category="community">
+          <img src="images/volunteer-team.png" alt="Volunteers building" loading="lazy">
+          <div class="overlay"><span>🔨 Habitat construction, Nepal</span></div>
+        </div>
+        <div class="gallery-item" data-category="education">
+          <img src="images/children-playing.png" alt="Children playing" loading="lazy">
+          <div class="overlay"><span>🎉 Recess at HopeRise School</span></div>
+        </div>
+        <div class="gallery-item" data-category="community">
+          <img src="images/tree-planting.png" alt="Tree planting" loading="lazy">
+          <div class="overlay"><span>🌳 Green Tomorrow reforestation</span></div>
+        </div>
+        <div class="gallery-item" data-category="healthcare">
+          <img src="images/disaster-relief.png" alt="Disaster relief" loading="lazy">
+          <div class="overlay"><span>🆘 Flood relief, Bangladesh</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container" style="text-align:center;">
+      <h2 style="font-family:var(--font-serif);font-size:clamp(1.8rem,3.5vw,2.5rem);color:#fff;margin-bottom:14px;">Every Photo Tells a Story of Hope</h2>
+      <p style="color:rgba(255,255,255,.7);margin-bottom:28px;">Help us create more moments like these.</p>
+      <a href="donate.html" class="btn btn-accent">Support Our Work ❤️</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="nav-logo"><div class="nav-logo-icon">🌱</div>HopeRise</a><p>Empowering communities since 2012.</p><div class="footer-socials"><a href="#">📘</a><a href="#">🐦</a><a href="#">📸</a><a href="#">💼</a></div></div>
+        <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="programs.html">Programs</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h4>Programs</h4><a href="programs.html">Education</a><a href="programs.html">Water</a><a href="programs.html">Healthcare</a></div>
+        <div class="footer-col"><h4>Get Involved</h4><a href="donate.html">Donate</a><a href="volunteer.html">Volunteer</a><a href="contact.html">Partner</a></div>
+      </div>
+      <div class="footer-bottom"><p>© 2025 HopeRise Foundation.</p><p><a href="#">Terms</a> · <a href="#">Privacy</a></p></div>
+    </div>
+  </footer>
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+  <script src="js/app.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Programs — HopeRise Foundation</title>
+  <meta name="description" content="Explore HopeRise Foundation's programs in education, clean water, healthcare, women empowerment, disaster relief, and environmental conservation.">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <nav class="navbar dark-page" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><div class="nav-logo-icon">🌱</div>HopeRise</a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="programs.html" class="active">Programs</a><a href="impact.html">Impact</a><a href="blog.html">Blog</a><a href="gallery.html">Gallery</a><a href="volunteer.html">Volunteer</a><a href="contact.html">Contact</a><a href="donate.html" class="nav-donate">Donate ❤️</a>
+      </div>
+      <button class="nav-hamburger" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Programs</span></div>
+      <h1>Programs That<br>Change Lives</h1>
+      <p>Comprehensive, community-driven programs addressing the root causes of poverty and creating pathways to sustainable development.</p>
+    </div>
+  </section>
+
+  <!-- HOW WE WORK -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">Our Approach</span>
+        <h2 class="section-title">How We Create Change</h2>
+        <p class="section-subtitle">A proven 4-step process that ensures lasting impact in every community we serve.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step reveal stagger-1">
+          <div class="step-number">1</div>
+          <h4>Assess Needs</h4>
+          <p>Partner with local leaders to understand community challenges and priorities.</p>
+        </div>
+        <div class="process-step reveal stagger-2">
+          <div class="step-number">2</div>
+          <h4>Design Programs</h4>
+          <p>Create culturally sensitive, evidence-based programs tailored to each community.</p>
+        </div>
+        <div class="process-step reveal stagger-3">
+          <div class="step-number">3</div>
+          <h4>Implement & Train</h4>
+          <p>Deploy resources and train local teams to manage programs independently.</p>
+        </div>
+        <div class="process-step reveal stagger-4">
+          <div class="step-number">4</div>
+          <h4>Measure & Scale</h4>
+          <p>Track outcomes, iterate on what works, and expand successful models.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALL PROGRAMS -->
+  <section class="section bg-white tab-section">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">What We Do</span>
+        <h2 class="section-title">Our Programs</h2>
+      </div>
+      <div class="tab-nav" style="justify-content:center;">
+        <button class="tab-btn active" data-tab="all">All Programs</button>
+        <button class="tab-btn" data-tab="education">Education</button>
+        <button class="tab-btn" data-tab="water">Water</button>
+        <button class="tab-btn" data-tab="healthcare">Healthcare</button>
+        <button class="tab-btn" data-tab="empowerment">Empowerment</button>
+        <button class="tab-btn" data-tab="environment">Environment</button>
+      </div>
+      <div class="programs-grid">
+        <div class="card reveal" data-category="education">
+          <div class="card-image"><img src="images/education.png" alt="Education"><span class="badge">Education</span></div>
+          <div class="card-body">
+            <h3>Bright Minds Initiative</h3>
+            <p>Building schools, training teachers, and providing scholarships to ensure every child has access to quality education regardless of circumstance.</p>
+            <a href="blog-post.html?id=1" class="card-link">Learn More →</a>
+          </div>
+        </div>
+        <div class="card reveal stagger-1" data-category="water">
+          <div class="card-image"><img src="images/water.png" alt="Clean Water"><span class="badge">Water & Sanitation</span></div>
+          <div class="card-body">
+            <h3>Pure Springs Project</h3>
+            <p>Constructing wells and purification systems in drought-affected regions, ensuring safe drinking water for communities year-round.</p>
+            <a href="blog-post.html?id=2" class="card-link">Learn More →</a>
+          </div>
+        </div>
+        <div class="card reveal stagger-2" data-category="healthcare">
+          <div class="card-image"><img src="images/healthcare.png" alt="Healthcare"><span class="badge">Healthcare</span></div>
+          <div class="card-body">
+            <h3>Healing Hands Network</h3>
+            <p>Mobile clinics bringing doctors, medicine, and preventive care to remote villages that lack hospital access worldwide.</p>
+            <a href="blog-post.html?id=3" class="card-link">Learn More →</a>
+          </div>
+        </div>
+        <div class="card reveal" data-category="empowerment">
+          <div class="card-image"><img src="images/gallery-women.png" alt="Women Empowerment"><span class="badge">Empowerment</span></div>
+          <div class="card-body">
+            <h3>Women Rising Program</h3>
+            <p>Vocational training, microfinance, and mentorship empowering 8,000+ women with marketable skills and financial independence.</p>
+            <a href="blog-post.html?id=4" class="card-link">Learn More →</a>
+          </div>
+        </div>
+        <div class="card reveal stagger-1" data-category="environment">
+          <div class="card-image"><img src="images/tree-planting.png" alt="Environment"><span class="badge">Environment</span></div>
+          <div class="card-body">
+            <h3>Green Tomorrow Initiative</h3>
+            <p>Community-led reforestation planting 500,000+ trees, combating climate change while creating sustainable local jobs.</p>
+            <a href="blog-post.html?id=6" class="card-link">Learn More →</a>
+          </div>
+        </div>
+        <div class="card reveal stagger-2" data-category="healthcare">
+          <div class="card-image"><img src="images/disaster-relief.png" alt="Disaster Relief"><span class="badge">Emergency Relief</span></div>
+          <div class="card-body">
+            <h3>Rapid Response Unit</h3>
+            <p>24/7 emergency deployment team providing immediate aid during natural disasters, conflicts, and humanitarian crises globally.</p>
+            <a href="blog-post.html?id=5" class="card-link">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIARY STORY -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal-left">
+          <div class="about-image"><img src="images/children-playing.png" alt="Children playing"></div>
+        </div>
+        <div class="reveal-right">
+          <span class="section-label">Spotlight</span>
+          <h2 class="section-title">From Beneficiary to <span class="highlight">Change Maker</span></h2>
+          <p class="section-subtitle">"I was one of the first 50 children in HopeRise's education program. Today, I'm a teacher in that same program, giving back to the community that gave me everything."</p>
+          <p class="section-subtitle" style="margin-top:12px;font-style:italic;color:var(--primary-500);">— Lakshmi Devi, Teacher, Rajasthan, India</p>
+          <a href="donate.html" class="btn btn-primary" style="margin-top:24px;">Support Stories Like This</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container" style="text-align:center;">
+      <h2 style="font-family:var(--font-serif);font-size:clamp(1.8rem,3.5vw,2.5rem);color:#fff;margin-bottom:14px;">Every Program Starts With You</h2>
+      <p style="color:rgba(255,255,255,.7);margin-bottom:28px;max-width:500px;margin-inline:auto;">Your support makes these life-changing programs possible.</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+        <a href="donate.html" class="btn btn-accent">Donate Now ❤️</a>
+        <a href="volunteer.html" class="btn btn-secondary">Volunteer With Us</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="nav-logo"><div class="nav-logo-icon">🌱</div>HopeRise</a><p>Empowering communities since 2012.</p><div class="footer-socials"><a href="#">📘</a><a href="#">🐦</a><a href="#">📸</a><a href="#">💼</a></div></div>
+        <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="programs.html">Programs</a><a href="impact.html">Impact</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h4>Programs</h4><a href="#">Education</a><a href="#">Clean Water</a><a href="#">Healthcare</a><a href="#">Empowerment</a><a href="#">Environment</a></div>
+        <div class="footer-col"><h4>Get Involved</h4><a href="donate.html">Donate</a><a href="volunteer.html">Volunteer</a><a href="contact.html">Partner</a><a href="impact.html">Reports</a></div>
+      </div>
+      <div class="footer-bottom"><p>© 2025 HopeRise Foundation.</p><p><a href="#">Terms</a> · <a href="#">Privacy</a></p></div>
+    </div>
+  </footer>
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+  <script src="js/app.js"></script>
+</body>
+</html>

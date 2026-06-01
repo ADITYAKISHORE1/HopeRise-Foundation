@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HopeRise Foundation — Empowering Communities, Transforming Lives</title>
+  <meta name="description" content="HopeRise Foundation is a global NGO empowering communities through education, healthcare, clean water, and sustainable development programs in 50+ countries.">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" id="nav-logo">
+        <div class="nav-logo-icon">🌱</div>HopeRise
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="impact.html">Impact</a>
+        <a href="blog.html">Blog</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="contact.html">Contact</a>
+        <a href="donate.html" class="nav-donate">Donate ❤️</a>
+      </div>
+      <button class="nav-hamburger" id="nav-hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg"><img src="images/hero.png" alt="Volunteers working together"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-particles" id="hero-particles"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge"><span class="dot"></span>Making a difference since 2012</div>
+        <h1>Empowering Lives,<br>Building <span class="accent">Brighter</span> Futures</h1>
+        <p class="hero-desc">We believe every person deserves access to education, healthcare, and clean water. Join us in creating lasting change across communities worldwide.</p>
+        <div class="hero-buttons">
+          <a href="donate.html" class="btn btn-accent">Donate Now ❤️</a>
+          <a href="programs.html" class="btn btn-secondary">Our Programs →</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><h3 class="counter" data-count="150">0</h3><p>Communities Served</p></div>
+          <div class="hero-stat"><h3 class="counter" data-count="50">0</h3><p>Countries Reached</p></div>
+          <div class="hero-stat"><h3 class="counter" data-count="2">0</h3><p>Million Lives Changed</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator"><div class="scroll-mouse"><div class="scroll-wheel"></div></div>Scroll</div>
+  </section>
+
+  <!-- MISSION BAR -->
+  <section class="mission-bar">
+    <div class="container mission-inner">
+      <div class="mission-icon">💡</div>
+      <div class="mission-text">
+        <h3>Our Mission: A World Where Everyone Thrives</h3>
+        <p>HopeRise Foundation works alongside local communities to build sustainable solutions for education, healthcare, and economic empowerment — because every person's potential deserves a chance to flourish.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT PREVIEW -->
+  <section class="section bg-light" id="about-preview">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal-left">
+          <div class="about-image"><img src="images/about.png" alt="Our team"></div>
+          <div class="about-floating-card">
+            <div class="icon-circle" style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--primary-400),var(--primary-500));display:flex;align-items:center;justify-content:center;font-size:1.2rem;">🌍</div>
+            <div><h4 style="font-size:1.5rem;font-weight:800;color:var(--primary-600);">13+</h4><p style="font-size:.78rem;color:var(--neutral-500);">Years of Service</p></div>
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <span class="section-label">Who We Are</span>
+          <h2 class="section-title">Driven by Compassion,<br>Guided by <span class="highlight">Purpose</span></h2>
+          <p class="section-subtitle">Founded in 2012, HopeRise Foundation has grown from a small community initiative into a global force for positive change. We partner with local leaders to create programs that are culturally sensitive and deeply impactful.</p>
+          <div class="about-features">
+            <div class="about-feature"><div class="icon">📚</div><div><h4>Education First</h4><p>Quality learning for every child</p></div></div>
+            <div class="about-feature"><div class="icon">💧</div><div><h4>Clean Water</h4><p>Safe water for rural communities</p></div></div>
+            <div class="about-feature"><div class="icon">🏥</div><div><h4>Healthcare</h4><p>Mobile clinics reaching remote areas</p></div></div>
+            <div class="about-feature"><div class="icon">🤝</div><div><h4>Community</h4><p>Empowering local leaders</p></div></div>
+          </div>
+          <a href="about.html" class="btn btn-outline" style="margin-top:28px;">Learn More About Us →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT STATS -->
+  <section class="section bg-dark" id="impact">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label light">Our Impact</span>
+        <h2 class="section-title light">Numbers That Tell Our Story</h2>
+        <p class="section-subtitle light">Every number represents a real person, a real community, a real transformation.</p>
+      </div>
+      <div class="impact-stats-grid">
+        <div class="glass-card stat-card reveal stagger-1">
+          <div class="stat-icon" style="background:linear-gradient(135deg,#22c55e33,#22c55e11);">🎓</div>
+          <h3><span class="counter" data-count="85000">0</span><span class="suffix">+</span></h3>
+          <p>Children Educated</p>
+        </div>
+        <div class="glass-card stat-card reveal stagger-2">
+          <div class="stat-icon" style="background:linear-gradient(135deg,#3b82f633,#3b82f611);">💧</div>
+          <h3><span class="counter" data-count="320">0</span><span class="suffix">+</span></h3>
+          <p>Wells Built</p>
+        </div>
+        <div class="glass-card stat-card reveal stagger-3">
+          <div class="stat-icon" style="background:linear-gradient(135deg,#f59e0b33,#f59e0b11);">🏥</div>
+          <h3><span class="counter" data-count="12000">0</span><span class="suffix">+</span></h3>
+          <p>Patients Treated</p>
+        </div>
+        <div class="glass-card stat-card reveal stagger-4">
+          <div class="stat-icon" style="background:linear-gradient(135deg,#ec489933,#ec489911);">❤️</div>
+          <h3><span class="counter" data-count="5000">0</span><span class="suffix">+</span></h3>
+          <p>Active Volunteers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROGRAMS -->
+  <section class="section bg-white" id="programs">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">Our Programs</span>
+        <h2 class="section-title">What We Do</h2>
+        <p class="section-subtitle">Comprehensive programs addressing root causes of poverty and creating sustainable development.</p>
+      </div>
+      <div class="home-programs-grid">
+        <div class="card reveal stagger-1">
+          <div class="card-image"><img src="images/education.png" alt="Education"><span class="badge">Education</span></div>
+          <div class="card-body">
+            <h3>Bright Minds Initiative</h3>
+            <p>Quality education for underprivileged children through school construction, teacher training, and scholarships in 35+ countries.</p>
+            <a href="programs.html" class="card-link">Learn More →</a>
+          </div>
+        </div>
+        <div class="card reveal stagger-2">
+          <div class="card-image"><img src="images/water.png" alt="Clean Water"><span class="badge">Water & Sanitation</span></div>
+          <div class="card-body">
+            <h3>Pure Springs Project</h3>
+            <p>Building wells and water purification systems in drought-affected regions for safe, clean drinking water year-round.</p>
+            <a href="programs.html" class="card-link">Learn More →</a>
+          </div>
+        </div>
+        <div class="card reveal stagger-3">
+          <div class="card-image"><img src="images/healthcare.png" alt="Healthcare"><span class="badge">Healthcare</span></div>
+          <div class="card-body">
+            <h3>Healing Hands Network</h3>
+            <p>Mobile healthcare clinics bringing doctors, medicines, and preventive care to remote villages worldwide.</p>
+            <a href="programs.html" class="card-link">Learn More →</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:40px;">
+        <a href="programs.html" class="btn btn-outline">View All Programs →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section bg-light" id="testimonials" style="position:relative;overflow:hidden;">
+    <div style="position:absolute;top:20px;right:60px;font-family:var(--font-serif);font-size:18rem;color:var(--primary-50);line-height:1;">"</div>
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="section-header center">
+        <span class="section-label">Stories of Change</span>
+        <h2 class="section-title">Voices From Our Community</h2>
+        <p class="section-subtitle">Hear from the people whose lives have been transformed by your support.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:30px;">
+        <div class="testimonial-card reveal stagger-1">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Thanks to the Bright Minds Initiative, my daughter is now the first person in our village to attend university. They gave her a future."</blockquote>
+          <div class="testimonial-author"><div class="avatar">AK</div><div><h4>Amara Kofi</h4><p>Parent, Ghana</p></div></div>
+        </div>
+        <div class="testimonial-card reveal stagger-2">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Before HopeRise built the well, our children walked 5km every day for water. Now clean water flows right in our village."</blockquote>
+          <div class="testimonial-author"><div class="avatar">PS</div><div><h4>Priya Sharma</h4><p>Village Elder, India</p></div></div>
+        </div>
+        <div class="testimonial-card reveal stagger-3">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Volunteering with HopeRise was life-changing. Seeing the direct impact of our work — the smiles — it's something I'll carry forever."</blockquote>
+          <div class="testimonial-author"><div class="avatar">MJ</div><div><h4>Maria Johnson</h4><p>Volunteer, USA</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG PREVIEW -->
+  <section class="section bg-white">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">Latest News</span>
+        <h2 class="section-title">From Our Blog</h2>
+        <p class="section-subtitle">Stories, updates, and insights from our work around the world.</p>
+      </div>
+      <div class="blog-preview-grid">
+        <div class="card blog-card reveal stagger-1">
+          <div class="card-image"><img src="images/education.png" alt="Education Blog"><span class="badge">Education</span></div>
+          <div class="card-body">
+            <div class="meta"><span class="tag">Education</span><span>May 28, 2025</span><span>·</span><span>5 min</span></div>
+            <h3>How Education Transforms Communities in Rural India</h3>
+            <p>Discover how our Bright Minds Initiative has helped over 15,000 children gain access to quality education.</p>
+            <a href="blog-post.html?id=1" class="card-link">Read More →</a>
+          </div>
+        </div>
+        <div class="card blog-card reveal stagger-2">
+          <div class="card-image"><img src="images/water.png" alt="Water Blog"><span class="badge">Water</span></div>
+          <div class="card-body">
+            <div class="meta"><span class="tag">Water</span><span>May 15, 2025</span><span>·</span><span>4 min</span></div>
+            <h3>Clean Water Changes Everything: Impact in East Africa</h3>
+            <p>320 wells built, 200,000 lives transformed. The ripple effect of clean water access.</p>
+            <a href="blog-post.html?id=2" class="card-link">Read More →</a>
+          </div>
+        </div>
+        <div class="card blog-card reveal stagger-3">
+          <div class="card-image"><img src="images/healthcare.png" alt="Healthcare Blog"><span class="badge">Healthcare</span></div>
+          <div class="card-body">
+            <div class="meta"><span class="tag">Healthcare</span><span>May 3, 2025</span><span>·</span><span>6 min</span></div>
+            <h3>Mobile Healthcare: Bringing Doctors to Doorsteps</h3>
+            <p>45 mobile clinics providing medical care to remote communities worldwide.</p>
+            <a href="blog-post.html?id=3" class="card-link">Read More →</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:40px;">
+        <a href="blog.html" class="btn btn-outline">View All Posts →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container cta-inner">
+      <div class="cta-content">
+        <h2>Together, We Can Create a World of Opportunity</h2>
+        <p>Your donation directly funds education, clean water, and healthcare. Every contribution makes a lasting difference.</p>
+        <div class="cta-buttons">
+          <a href="donate.html" class="btn btn-accent">Donate Now ❤️</a>
+          <a href="volunteer.html" class="btn btn-secondary">Become a Volunteer</a>
+        </div>
+      </div>
+      <div class="cta-features">
+        <div class="cta-feature reveal-right stagger-1"><span class="emoji">🎯</span><div><h4>92% Direct Impact</h4><p>Of every dollar goes to programs</p></div></div>
+        <div class="cta-feature reveal-right stagger-2"><span class="emoji">🔒</span><div><h4>100% Transparent</h4><p>Full financial reports published</p></div></div>
+        <div class="cta-feature reveal-right stagger-3"><span class="emoji">🏆</span><div><h4>Award Winning</h4><p>Recognized by UN Global Compact</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-bar">
+    <div class="container newsletter-inner">
+      <div><h3>Stay Connected With Our Mission</h3><p>Get monthly updates on our programs, impact stories, and ways to help.</p></div>
+      <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"><div class="nav-logo-icon">🌱</div>HopeRise</a>
+          <p>Empowering underprivileged communities through education, healthcare, and sustainable development since 2012.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="programs.html">Programs</a>
+          <a href="impact.html">Our Impact</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <a href="programs.html">Education</a>
+          <a href="programs.html">Clean Water</a>
+          <a href="programs.html">Healthcare</a>
+          <a href="programs.html">Women Empowerment</a>
+          <a href="programs.html">Disaster Relief</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get Involved</h4>
+          <a href="donate.html">Donate</a>
+          <a href="volunteer.html">Volunteer</a>
+          <a href="contact.html">Partner With Us</a>
+          <a href="impact.html">Annual Reports</a>
+          <a href="gallery.html">Photo Gallery</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 HopeRise Foundation. All rights reserved. Made with ❤️ for a better world.</p>
+        <p><a href="#">Terms</a> · <a href="#">Privacy</a> · <a href="#">Accessibility</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/app.js"></script>
+  <script src="js/counter.js"></script>
+</body>
+</html>
