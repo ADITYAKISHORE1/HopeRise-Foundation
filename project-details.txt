@@ -14,9 +14,8 @@ Goal: To create a beautiful, feature-rich website that highlights the organizati
 --------------------------------------------------------------------------------
 2. URLS
 --------------------------------------------------------------------------------
-[Important: Replace these placeholders with your actual URLs once created]
-GitHub Repository: https://github.com/YourUsername/hoperise-ngo-website
-Live Website URL:  https://hoperise-ngo-website.vercel.app
+GitHub Repository: https://github.com/ADITYAKISHORE1/HopeRise-Foundation
+Live Website URL:  https://hope-rise-foundation-ngo.vercel.app/
 
 --------------------------------------------------------------------------------
 3. TECHNOLOGY STACK
