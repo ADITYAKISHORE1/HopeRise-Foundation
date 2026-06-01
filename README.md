@@ -3,8 +3,7 @@
 Welcome to the **HopeRise Foundation** repository! This is a complete, feature-rich, and professionally designed NGO (Non-Governmental Organization) website built to highlight global initiatives such as Education, Clean Water, Healthcare, Women Empowerment, Disaster Relief, and Environmental Conservation.
 
 ## 🔗 Live Links
-- **Live Website**: [https://hoperise-ngo-website.vercel.app](https://hoperise-ngo-website.vercel.app) *(Update this URL once deployed to Vercel)*
-- **GitHub Repository**: [https://github.com/YourUsername/hoperise-ngo-website](https://github.com/YourUsername/hoperise-ngo-website) *(Update with your actual repo URL)*
+- **Live Website**: [Website](https://hope-rise-foundation-ngo.vercel.app/) *(Update this URL once deployed to Vercel)*
 
 ---
 
